@@ -9,12 +9,7 @@ public class Barberia {
 	private Barbero barbero;
 	private Silla sillaDeBarberia;
 	
-	public Barberia(){
-		inicializar();
-		
-	}
-	
-	public void inicializar(){
+	Barberia(){
 		//Igualar sillas de espera
 		//No están ocupadas al iniciar
 		sillasDeEspera = new Silla[5];
@@ -28,8 +23,8 @@ public class Barberia {
 		//Iniciar al barbero
 		barbero = new Barbero(this);
 		barbero.setDormido(true);
+		
 	}
-
 
 	public boolean hayClienteNuevo(){
 		Random ran = new Random();
